@@ -1,0 +1,27 @@
+{
+    "events": [
+        {
+            "title": "Chat de Confianza",
+            "description": "En este chat tendrás la oportunidad de platicar de temas LGBTQ+ con consejerxs de manera confidencial y segura.",
+            "date": "2 de junio",
+            "time": "18:00 hrs (CDMX)",
+            "digital": true,
+            "location": "WhatsApp",
+            "link" : "https://wa.me/message/2SA6X6W2DK7HH1",
+            "buttonText" : "Escríbenos",
+            "img": "img/header_chatdeconfianza.png"
+        },
+        {
+            "title": "Círculo de Confianza",
+            "description": "Espacio digital en el que charlamos sobre algún tema relevante para la comunidad, en compañía de una persona experta en salud mental.",
+            "date": "14 de junio",
+            "time": "19:00 hrs (CDMX)",
+            "digital": true,
+            "location": "Zoom",
+            "link" : "http://registro-cdc.herokuapp.com",
+            "buttonText": "Regístrate",
+            "img": "img/header_circulodeconfianza.png"
+        }
+        
+    ]
+}

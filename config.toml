@@ -1,0 +1,25 @@
+baseURL = 'https://incluyo.lgbt'
+languageCode = 'es-mx'
+
+title = 'Incluyo'
+theme = 'incluyo'
+
+[params]
+  description = 'Incluyo LGBT es un emprendimiento social que fomenta el desarrollo emocional y personal de juventudes LGBTQ+.'
+
+  author = 'Incluyo LGBT'
+
+  keywords = 'incluyo,lgbt,lgbtq,lgbtq+,gay,lesbiana,bi,bisexual,homosexual,trans,transgenero,transexual,trabesti,homosexual,apoyo,jovenes,juventud,intersexual,asexual,pansexual,familia,queer,pride,orgullo'
+
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    identifier = "about"
+    url = "/about/"
+    weight = 2
