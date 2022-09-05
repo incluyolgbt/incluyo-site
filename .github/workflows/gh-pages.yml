@@ -1,4 +1,8 @@
-on: push
+name: Build Hugo Site
+
+on:
+  repository_dispatch:
+    	types: [publish-event]
 
 jobs:
   build:
