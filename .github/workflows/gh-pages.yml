@@ -1,6 +1,8 @@
 name: Build Hugo Site
 
 on:
+  push:
+    branches: [gh-pages]
   repository_dispatch:
     types: [publish-event-ok]
 
