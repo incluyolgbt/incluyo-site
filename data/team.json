@@ -30,12 +30,6 @@
             "sub" : "@memo_gava",
             "bio": "Mercadotecnia",
             "img": "/img/guillermo_garcia_incluyo.jpg"
-        },
-        {
-            "name": "Danae Muñoz",
-            "sub" : "@hedaneh",
-            "bio": "Comunicación",
-            "img": "/img/danae_munoz_incluyo.jpg"
         }
     ]
 }
