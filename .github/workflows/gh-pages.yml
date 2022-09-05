@@ -1,6 +1,4 @@
-name: 'Hugo Publish'
-description: 'Github action to deploy Hugo blog which preserves the history and keeps commit messgages on partiy with the publishing branch'
-author: 'avi'
+on: push
 
 jobs:
   build:
