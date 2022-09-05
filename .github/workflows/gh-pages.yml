@@ -2,7 +2,7 @@ name: Build Hugo Site
 
 on:
   repository_dispatch:
-    types: [publish-event]
+    types: [publish-event-ok]
 
 jobs:
   build:
