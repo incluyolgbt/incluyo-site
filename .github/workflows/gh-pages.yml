@@ -32,7 +32,7 @@ jobs:
           echo "::set-output name=commit_msg::$(git log -1 --pretty=%B)"
           git worktree add public gh-pages
       - name: build
-        run: hugo --minify
+        run: HUGO_PARAMS_contentfulAPIKey=${{ secrets.CONTENTFULAPIKEY }} hugo --minify
 
       - name: commit
         run: |

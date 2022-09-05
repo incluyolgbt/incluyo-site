@@ -1,7 +1,12 @@
 {{ define "main" }}
 
 {{ $hero := .Site.Data.hero }}
-{{ $events := .Site.Data.events }}
+
+{{ $eventsEndpoint := printf "%s%s%s"
+$.Site.Params.contentfulContentURL
+"content_type=event&access_token="
+$.Site.Params.contentfulAPIKey
+}}
 
 <!-- HERO ================================================== -->
 <section class="banner-area py-7">
@@ -60,27 +65,37 @@
 
         <div class="row justify-content-center">
 
-            {{ range $index, $event := $events.events }}
-            <!-- range $event := getJSON "https://api.jsonbin.io/b/62632e0980883c3054e5ba40/latest" -->
+            {{ $events := getJSON $eventsEndpoint }}
+
+            {{ range $events.items }}
+
+            {{ $imgEndpoint := printf "%s%s%s%s"
+            $.Site.Params.contentfulAssetsURL .fields.image.sys.id
+            "?access_token=" $.Site.Params.contentfulAPIKey
+            }}
+
+            {{ $imgJSON := getJSON $imgEndpoint }}
+
+            {{ $imgURL := printf "%s%s" "https:" $imgJSON.fields.file.url }}
 
             <div class="col-lg-4 col-sm-6 col-md-6">
                 <div class="process-block">
-                    <img src="{{ $event.img }}" alt="" class="img-fluid">
+                    <img src="{{ $imgURL }}" alt="" class="img-fluid">
 
-                    <h3>{{ $event.title }}</h3>
-                    <p>{{ $event.description }}</p>
+                    <h3>{{ .fields.title }}</h3>
+                    <p>{{ .fields.description }}</p>
                     <p>
-                        <i class="ti-calendar"></i>&nbsp;&nbsp;{{ $event.date }} &nbsp;&nbsp;
-                        <i class="ti-alarm-clock"></i>&nbsp;&nbsp;{{ $event.time }} &nbsp;&nbsp;
-                        {{ if $event.digital }}
-                            <i class="ti-link"></i>&nbsp;&nbsp;{{ $event.location }} &nbsp;&nbsp;
+                        <i class="ti-calendar"></i>&nbsp;&nbsp;{{ .fields.date }} &nbsp;&nbsp;
+                        <i class="ti-alarm-clock"></i>&nbsp;&nbsp;{{ .fields.time }} &nbsp;&nbsp;
+                        {{ if .fields.digital }}
+                        <i class="ti-link"></i>&nbsp;&nbsp;{{ .fields.platform }} &nbsp;&nbsp;
                         {{ else }}
-                            <i class="ti-location-pin"></i>&nbsp;&nbsp;{{ $event.location }} &nbsp;&nbsp;
+                        <i class="ti-location-pin"></i>&nbsp;&nbsp;{{ .fields.platform }} &nbsp;&nbsp;
                         {{ end }}
                     </p>
                     <p class="mb-0">
-                        <a href="{{ $event.link }}" class="btn btn-outline-dark btn-circled" target="_blank">
-                            {{ $event.buttonText }}
+                        <a href="{{ .fields.url }}" class="btn btn-outline-dark btn-circled" target="_blank">
+                            {{ .fields.cta }}
                         </a>
                     </p>
                 </div>
