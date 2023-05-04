@@ -4,73 +4,77 @@ $.Site.Params.contentfulContentURL
 $.Site.Params.contentfulAPIKey
 }}
 
-<div class="row py-4">
-    <div class="col-lg-7 col-md-12 col-sm-12 ">
-        <div class="single-project">
-            <img src="/img/circulo-digital.png" alt="" class="img-fluid">
+<div class="container" style="margin-top: 70px;">
+
+    <div class="row py-4">
+        <div class="col-lg-7 col-md-12 col-sm-12 ">
+            <div class="single-project">
+                <img src="/img/circulo-digital.png" alt="" class="img-fluid">
+            </div>
         </div>
-    </div>
-    <div class="col-lg-4 col-md-12 col-sm-12 ">
-        <div class="project-content-block">
-            <h2>¿Qué es Incluyo?</h2>
-            <p>Incluyo es un emprendimiento social que fomenta el desarrollo emocional y personal de juventudes LGBTQ+ a
-                través de la creación de espacios seguros.</p>
-        </div>
-    </div>
-</div>
-
-<div class="row py-4">
-
-    <div class="col-lg-4 col-md-12 col-sm-12 ">
-        <div class="project-content-block-inverse">
-            <h2>¿Qué queremos ser?</h2>
-            <p>Queremos ser una empresa social (autosustentable, trascendental y replicable) que trabaje por cubrir las
-                necesidades básicas de la juventud LGBTQ+ (hogar, sustento económico, bienestar emocional, legal) a
-                través de una metodología propia. </p>
-        </div>
-    </div>
-
-    <div class="col-lg-7 col-md-12 col-sm-12 ">
-        <div class="single-project">
-            <img src="/img/equipo-nuevo.jpeg" alt="" class="img-fluid img-abt">
-        </div>
-    </div>
-
-</div>
-
-<div class="row">
-    <h1 style="margin-left: 10px;">Nuestro Equipo</h1>
-</div>
-
-<div class="row">
-
-    {{ $team := getJSON $teamEndpoint }}
-
-    {{ range $team.items }}
-
-    {{ $imgEndpoint := printf "%s%s%s%s"
-    $.Site.Params.contentfulAssetsURL .fields.photo.sys.id
-    "?access_token=" $.Site.Params.contentfulAPIKey
-    }}
-
-    {{ $imgJSON := getJSON $imgEndpoint }}
-
-    {{ $imgURL := printf "%s%s" "https:" $imgJSON.fields.file.url }}
-
-    <div class="col-lg-4">
-        <div class="test-inner ">
-            <div class="test-author-thumb d-flex">
-                <img src="{{ $imgURL }}" alt="Testimonial author" class="img-fluid">
-                <div class="test-author-info">
-                    <h4>{{ .fields.name }}</h4>
-                    <h6>{{ .fields.sm_handle }}</h6>
-                    <h6>{{ .fields.description }}</h6>
-                </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 ">
+            <div class="project-content-block">
+                <h2>¿Qué es Incluyo?</h2>
+                <p>Incluyo es un emprendimiento social que fomenta el desarrollo emocional y personal de juventudes
+                    LGBTQ+ a través de la creación de espacios seguros.</p>
             </div>
         </div>
     </div>
 
-    {{ end }}
+    <div class="row py-4">
 
+        <div class="col-lg-4 col-md-12 col-sm-12 ">
+            <div class="project-content-block-inverse">
+                <h2>¿Qué queremos ser?</h2>
+                <p>Queremos ser una empresa social (autosustentable, trascendental y replicable) que trabaje por cubrir
+                    las necesidades básicas de la juventud LGBTQ+ (hogar, sustento económico, bienestar emocional,
+                    legal) a través de una metodología propia. </p>
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-12 col-sm-12 ">
+            <div class="single-project">
+                <img src="/img/equipo-nuevo.jpeg" alt="" class="img-fluid img-abt">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <h1 style="margin-left: 10px;">Nuestro Equipo</h1>
+    </div>
+
+    <div class="row">
+
+        {{ $team := getJSON $teamEndpoint }}
+
+        {{ range $team.items }}
+
+        {{ $imgEndpoint := printf "%s%s%s%s"
+        $.Site.Params.contentfulAssetsURL .fields.photo.sys.id
+        "?access_token=" $.Site.Params.contentfulAPIKey
+        }}
+
+        {{ $imgJSON := getJSON $imgEndpoint }}
+
+        {{ $imgURL := printf "%s%s" "https:" $imgJSON.fields.file.url }}
+
+        <div class="col-lg-4">
+            <div class="test-inner ">
+                <div class="test-author-thumb d-flex">
+                    <img src="{{ $imgURL }}" alt="Testimonial author" class="img-fluid">
+                    <div class="test-author-info">
+                        <h4>{{ .fields.name }}</h4>
+                        <h6>{{ .fields.sm_handle }}</h6>
+                        <h6>{{ .fields.description }}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{ end }}
+
+
+    </div>
 
 </div>
