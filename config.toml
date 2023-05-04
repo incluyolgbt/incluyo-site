@@ -26,3 +26,8 @@ theme = 'incluyo'
     identifier = "about"
     url = "/about/"
     weight = 2
+  [[menu.main]]
+    name = "Metodología"
+    identifier = "metodologia"
+    url = "/metodologia/"
+    weight = 2
