@@ -1426,8 +1426,8 @@ CONTACT PAGE
 .scroll-to-top {
   position: fixed;
   content: "";
-  right: 30px;
-  bottom: 50px;
+  right: 10px;
+  bottom: 15px;
   z-index: 999;
   background: #21c87a;
   color: #fff !important;
@@ -1436,12 +1436,12 @@ CONTACT PAGE
 }
 
 .scroll-to-top i {
-  width: 60px;
-  height: 60px;
+  width: 46px;
+  height: 46px;
   border-radius: 100%;
   text-align: center;
   font-size: 22px;
-  line-height: 60px;
+  line-height: 46px;
   display: block;
   box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
 }
