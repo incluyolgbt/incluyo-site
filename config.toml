@@ -4,8 +4,6 @@ languageCode = 'es-mx'
 title = 'Incluyo'
 theme = 'incluyo'
 
-
-
 [params]
   description = 'Incluyo LGBT es un emprendimiento social que fomenta el desarrollo emocional y personal de juventudes LGBTQ+.'
   author = 'Incluyo LGBT'
@@ -14,6 +12,8 @@ theme = 'incluyo'
   contentfulContentURL = "https://cdn.contentful.com/spaces/5gmwaxnst2mo/environments/master/entries?"
   contentfulAssetsURL = "https://cdn.contentful.com/spaces/5gmwaxnst2mo/environments/master/assets/"
   contentfulAPIKey = ""
+
+  enforceSSL = true
 
 [menu]
   [[menu.main]]
