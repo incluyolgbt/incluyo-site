@@ -25,7 +25,6 @@
     /*  Fixed header
     /* ----------------------------------------------------------- */
 
-
     $(window).on('scroll', function () {
         if ($(window).scrollTop() > 70) {
             $('.site-navigation,.trans-navigation').addClass('header-white');
@@ -35,21 +34,30 @@
 
     });
 
- 
     
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger').on('click', function(event) {
-      var $anchor = $(this);
-      $('html, body').stop().animate({
-          scrollTop: $($anchor.attr('href')).offset().top
-      }, 1500);
-      event.preventDefault();
-  });
+    $('a.js-scroll-trigger').on('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500);
+        event.preventDefault();
+    });
 
 
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').on('click', function(event) {
-    $('.navbar-collapse').collapse('hide');
-  });
+    // Closes responsive menu when a scroll trigger link is clicked
+    $('.js-scroll-trigger').on('click', function(event) {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    $(document).ready(function() {
+        var url = $("#video-player").attr('src');
+        $("#exampleModalCenter").on('hide.bs.modal', function() {
+            $("#video-player").attr('src', '');
+        });
+        $("#exampleModalCenter").on('show.bs.modal', function() {
+            $("#video-player").attr('src', url);
+        });
+    });
 
 })(jQuery); // End of use strict
