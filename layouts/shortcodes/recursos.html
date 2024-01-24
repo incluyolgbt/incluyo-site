@@ -1,122 +1,100 @@
-{{ $teamEndpoint := printf "%s%s%s"
-$.Site.Params.contentfulContentURL
-"content_type=team-member&access_token="
-$.Site.Params.contentfulAPIKey
-}}
+<section class="content">
+  <div class="container py-5">
+    <div class="row px-4">
 
-<section class="section" id="projects-wrap">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-11">
-                <div class="section-heading">
-                    <h1 class="text-white">
-                        Crear espacios seguros para personas LGBTQ+ es responsabilidad de todes.
-                    </h1>
-                    <p class="mt-40">
-                        <a href="#descarga" class="btn btn-primary btn-circled js-scroll-trigger">
-                            Descarga la metodología
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-11">
-                <p class="lead text-white" style='font-weight: 600;'>
-                    Incluyo fomenta el desarrollo emocional y personal de juventudes
-                    LGBTQ+ a través de la creación de espacios seguros. ¿Pero, qué son realmente
-                    los espacios seguros? Nuestra publicación:
-                    <i>"Metodología para la creación de Espacios Seguros para Juventudes LGBTQ+" </i>
-                    busca ser un documento de
-                    referencia pública para que cualquier persona, colectivo u organización
-                    pueda utilizarlo como herramienta para fortalecer sus propios esfuerzos en
-                    favor de las personas LGBTQ+.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+      <div class="col-3 mobile-hide sidebar">
+        <ul>
+          <li>
+            <a href="#1">Introducción</a>
+          </li>
+          <li>
+            <a href="#2">Presentación</a>
+          </li>
+          <li>
+            <a href="#3">Descargar la metodología</a>
+          </li>
+        </ul>
+      </div>
 
-<section id="projects">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-10 col-sm-12 col-12">
-                <div class="single-project">
-                    <img src="/img/presentacion-thumbnail.png" alt="Video" class="img-fluid" data-toggle="modal"
-                        data-target="#exampleModalCenter">
-                    <div class="project-content">
-                        <h4>Evento: Presentación de la Metodología</h4>
-                        <p>
-                            Mira aquí la grabación del evento de presentación de la metodología, en el que el equipo
-                            de Incluyo aprovechó para compartir con sus aliades sobre los contenidos y usos de la
-                            metodología.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4>Presentación de la Metodología Incluyo</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">X</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="videowrapper">
-                        <iframe src="https://www.youtube.com/embed/-H98jOO6r08?cc_load_policy=1&cc_lang_pref=es"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen id="video-player"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+      <div class="col-lg-9 col-md-12 col-sm-12 scrollable">
 
-<div class="container" id="descarga">
-    <div class="row py-4 justify-content-center">
-        <div class="col-lg-5 col-md-12 col-sm-12 col-11 mb-30">
-            <a href="https://recursos.incluyo.lgbt/metodologia" target='_blank'>
-                <img src="/img/MetodologiaPortada.png" alt="Metodología Incluyo" class="img-fluid"
-                    id="metodologia-cover">
-            </a>
-        </div>
-        <div class="col-lg-7 col-md-12 col-sm-12 col-11">
-            <h2>Metodología para la creación de Espacios Seguros para Juventudes LGBTQ+</h2>
-            <h4 style='font-style: italic;'>Descarga ditigal gratuita</h4>
-            <p>
+        <h1 id='1' class='scroll-margin'>Metodología Incluyo</h1>
+        <p>Crear espacios seguros para personas LGBTQ+ es responsabilidad de todes.
+          ¿Pero, qué son realmente los espacios seguros? Nuestra publicación: <b>"Metodología para la creación
+            de
+            Espacios Seguros para Juventudes LGBTQ+"</b> busca ser un documento de referencia pública para
+          que
+          cualquier persona,
+          colectivo u organización pueda utilizarlo como herramienta para fortalecer sus propios esfuerzos en
+          favor de las
+          personas LGBTQ+.</p>
+
+        <h1 id='2' class='scroll-margin'>Presentación de la Metodología</h1>
+        <p>
+          Mira aquí la grabación del evento de presentación de la metodología, en el que el equipo
+          de Incluyo aprovechó para compartir con sus aliades sobre los contenidos y usos de la
+          metodología.
+        </p>
+
+        <a href="https://www.youtube.com/watch?v=-H98jOO6r08" target='_blank'>
+          <img src="/img/presentacion-thumbnail.png" alt="Video" class="img-fluid metodologia-video" data-toggle="modal"
+            data-target="#exampleModalCenter">
+        </a>
+
+
+        <h1 id='3' class='scroll-margin'>Descargar la metodología</h1>
+
+        <div class="container descarga">
+
+          <div class="row py-4">
+
+            <div class="col-lg-5 col-md-12 col-sm-12 col-11 mb-30">
+              <a href="https://recursos.incluyo.lgbt/metodologia" target='_blank'>
+                <img src="/img/MetodologiaPortada.png" alt="Metodología Incluyo" class="img-fluid metodologia-cover" />
+              </a>
+            </div>
+
+            <div class="col-lg-7 col-md-12 col-sm-12 col-11">
+              <h2>Metodología para la creación de Espacios Seguros para Juventudes LGBTQ+</h2>
+              <h3>Descarga ditigal gratuita</h3>
+
+              <p>
                 <b>Autoría:</b>
                 Erika Daniela Cisneros González,
                 Emanuel Estrada Larios,
                 Daniel Antonio Ortega Medina,
                 Amairany Vega Bravo
-                <br />
-                <b>Año de publicación:</b> 2023
-            </p>
-            <p>
-                <a href="https://recursos.incluyo.lgbt/metodologia" target='_blank' class="btn btn-primary btn-circled"
-                    style="font-size: 1rem;">
-                    📥 &nbsp; Descargar PDF
-                </a>
-            </p>
-            <p>
-                Este documento busca ser una referencia pública para que cualquier persona,
-                colectivo u organización pueda utilizarlo como herramienta
-                para fortalecer sus propios esfuerzos en favor de las personas LGBTQ+.
-                ¡Descárgalo y comparte!
-            </p>
-            <p>
-                Si tienes cualquier duda o retroalimentación respecto al documento, escríbenos
-                a <a
-                    href="mailto:&#104;&#111;&#108;&#097;&#064;&#105;&#110;&#099;&#108;&#117;&#121;&#111;&#046;&#108;&#103;&#098;&#116;">hola@incluyo.lgbt</a>.
-            </p>
+              </p>
 
+              <p><b>Año de publicación:</b> 2023</p>
+
+              <p>
+                <a href="https://recursos.incluyo.lgbt/metodologia" target='_blank' class="btn btn-incluyo btn-lg">
+                  📥 &nbsp; Descargar PDF
+                </a>
+              </p>
+
+            </div>
+          </div>
         </div>
+
+        <p>
+          Si tienes cualquier duda o retroalimentación respecto al documento, escríbenos
+          a <a
+            href="mailto:&#104;&#111;&#108;&#097;&#064;&#105;&#110;&#099;&#108;&#117;&#121;&#111;&#046;&#108;&#103;&#098;&#116;">hola@incluyo.lgbt</a>.
+        </p>
+
+        <p>
+          Este documento busca ser una referencia pública para que cualquier persona,
+          colectivo u organización pueda utilizarlo como herramienta
+          para fortalecer sus propios esfuerzos en favor de las personas LGBTQ+.
+          ¡Descárgalo y comparte!
+        </p>
+
+
+      </div>
+
     </div>
-</div>
+  </div>
+
+</section>

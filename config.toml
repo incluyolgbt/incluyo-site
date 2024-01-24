@@ -2,7 +2,7 @@ baseURL = 'https://incluyo.lgbt'
 languageCode = 'es-mx'
 
 title = 'Incluyo'
-theme = 'incluyo'
+theme = 'incluyo2.0'
 
 [params]
   description = 'Incluyo LGBT es un emprendimiento social que fomenta el desarrollo emocional y personal de juventudes LGBTQ+.'
@@ -11,23 +11,23 @@ theme = 'incluyo'
 
   contentfulContentURL = "https://cdn.contentful.com/spaces/5gmwaxnst2mo/environments/master/entries?"
   contentfulAssetsURL = "https://cdn.contentful.com/spaces/5gmwaxnst2mo/environments/master/assets/"
-  contentfulAPIKey = ""
+  contentfulAPIKey = "U2D7ENiC4tzF4fbG3CAXWsNcl6G-rvJMG1BSCRmLZZ8"
 
   enforceSSL = true
 
 [menu]
   [[menu.main]]
-    name = "Home"
+    name = "Inicio"
     pre = "home"
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "About"
-    identifier = "about"
-    url = "/about/"
+    name = "Conócenos"
+    identifier = "conocenos"
+    url = "/conocenos"
     weight = 2
   [[menu.main]]
     name = "Metodología"
     identifier = "metodologia"
-    url = "/metodologia/"
+    url = "/metodologia"
     weight = 2
