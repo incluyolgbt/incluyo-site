@@ -1,3 +1,17 @@
 {{ define "main" }}
-{{ .Content }}
+
+<section class="content">
+  <div class="container py-5">
+    <div class="row px-4">
+      <div class="col-3 mobile-hide sidebar">
+        {{ .TableOfContents }}
+      </div>
+      <div class="col-lg-9 col-md-12 col-sm-12 scrollable">
+        {{ .Content }}
+      </div>
+    </div>
+
+  </div>
+</section>
+
 {{ end }}

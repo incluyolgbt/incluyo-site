@@ -1,0 +1,36 @@
+{{ $teamEndpoint := printf "%s%s%s"
+$.Site.Params.contentfulContentURL
+"content_type=team-member&access_token="
+$.Site.Params.contentfulAPIKey
+}}
+
+<div class="container">
+  <div class='row py-3'>
+
+    {{ $team := getJSON $teamEndpoint }}
+
+    {{ range $team.items }}
+
+    {{ $imgEndpoint := printf "%s%s%s%s"
+    $.Site.Params.contentfulAssetsURL .fields.photo.sys.id
+    "?access_token=" $.Site.Params.contentfulAPIKey
+    }}
+
+    {{ $imgJSON := getJSON $imgEndpoint }}
+
+    {{ $imgURL := printf "%s%s" "https:" $imgJSON.fields.file.url }}
+
+    <div class="col-lg-6">
+      <div class="card text-center mb-3">
+        <div class="card-body">
+          <img src="{{ $imgURL }}" alt="{{ .fields.name }}" class="profile-pic">
+          <h2 class="card-title">{{ .fields.name }}</h5>
+            <p class="card-text">{{ .fields.sm_handle }}</p>
+        </div>
+      </div>
+    </div>
+
+    {{ end }}
+
+  </div>
+</div>
