@@ -1,0 +1,45 @@
+{{ $teamEndpoint := printf "%s%s%s"
+$.Site.Params.contentfulContentURL
+"content_type=team-member&access_token="
+$.Site.Params.contentfulAPIKey
+}}
+
+<div class="container">
+  <div class='row py-3'>
+
+    <div class="col-lg-6">
+      <div class="card mb-3">
+        <img src="/img/dsmi_thumbnail.png" class="card-img-top" alt="Directorio de Salud Mental LGBTQ+">
+        <div class="card-body">
+          <h5 class="card-title">Directorio de Salud Mental LGBTQ+</h5>
+          <p class="card-text">
+            Se trata de una base de datos gratuita que engloba a diversas personas profesionistas de la salud mental que
+            poseen
+            conocimientos y sensibilidad hacia las necesidades únicas de las personas LGBTQ+ en México y países
+            hispanohablantes.
+          </p>
+          <a href="/dsmi" class="btn btn-incluyo">Conoce más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card mb-3">
+        <img src="/img/metodologia_thumbnail.png" class="card-img-top"
+          alt="Metodología para la creación de Espacios Seguros">
+        <div class="card-body">
+          <h5 class="card-title">Metodología para la creación de Espacios Seguros</h5>
+          <p class="card-text">
+            Nuestra primera publicación busca ser un documento de referencia pública para que cualquier persona,
+            colectivo u organización pueda utilizarlo como
+            herramienta para fortalecer sus propios esfuerzos en favor de las personas LGBTQ+
+          </p>
+          <a href="/metodologia" class="btn btn-incluyo">Conoce más</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
