@@ -22,23 +22,23 @@ Algunos espacios creados para la **población LGBTQ+ en general** incluyen:
 
 - **Círculos de Confianza**: Reuniones mensuales en las que se dialoga sobre temas de interés para la comunidad con el acompañamiento de una persona experta en salud mental.
 
-- **Talleres de interés general:** Talleres gratuitos sobre temas relevantes para personas LGBTQ+, cómo salud, autocuidado, sexualidad, entre otros.
+- **Talleres de interés general:** Talleres gratuitos sobre temas relevantes para personas LGBTQ+, como salud, autocuidado, sexualidad, entre otros.
 
-- **Presencia en eventos comunitarios:** Incluyo busca tener presencia en eventos frecuentados por personas LGBTQ+, por ejemplo, en la marcha del orgullo. En los últimos años, Incluyo se ha hecho presente en las marchas con un contingente que busca cobijar a quienes marchan por primera vez o no saben con quién asistir.
+- **Presencia en eventos comunitarios:** Incluyo busca tener presencia en eventos frecuentados por personas LGBTQ+, por ejemplo, en la marcha del orgullo. En los últimos años, Incluyo se ha hecho presente en las marchas con un contingente que busca acompañar a quienes marchan por primera vez o no saben con quién asistir.
 
-- **Espacios culturales y recreativos:** Estos espacios buscan fomentar la creación de comunidad a travéz de actividades culturales y recreativas. Algunos ejemplos de estos espacios que Incluyo ha gestionado en los últimos años son los picnics queer, visitas a museos, eventos de networking y muestras culturales.
+- **Espacios culturales y recreativos:** Estos espacios buscan fomentar la creación de comunidad a través de actividades culturales y recreativas. Algunos ejemplos de estos espacios que Incluyo ha gestionado en los últimos años son los pícnics queer, visitas a museos, eventos de networking y muestras culturales.
 
-En cuanto a los espacios creados para la **empresas y escuelas**, Incluyo ofrece:
+En cuanto a los espacios creados para **empresas y escuelas**, Incluyo ofrece:
 
-- **Círculos de Confianza especializados**: En estas sesiones se ofrece la oportunidad de crear un espacio para personas LGBTQ+ y aliadas en las que se dialogan temás de interés y se promueven las buenas prácticas para crear un ambiente seguro e incluyente para todas las personas en la empresa o escuela. De igual manera, se cuenta con el acompañamiento de una persona experta en salud mental.
+- **Círculos de Confianza especializados**: En estas sesiones se ofrece la oportunidad de crear un espacio para personas LGBTQ+ y aliadas en las que se dialogan temas de interés y se promueven las buenas prácticas para crear un ambiente seguro e incluyente para todas las personas en la empresa o escuela. De igual manera, se cuenta con el acompañamiento de una persona experta en salud mental.
 
-- **Sensibilizaciones:** A través de sensibilizaciones, incluyo busca formar a las empresas, así cómo a sus líderes y personal en temas de diversidad sexogenérica, inclusión y respeto.
+- **Sensibilizaciones:** A través de sensibilizaciones, incluyo busca formar a las empresas, así cómo a sus líderes y personal en temas de inclusión y respeto a la diversidad sexogenérica.
 
 Otros proyectos en los que Incluyo trabaja activamente son:
 
-- **Directorio de salud mental:** Se trata de una base de datos gratuita que engloba a diversas personas profesionistas de la salud mental que poseen conocimientos y sensibilidad hacia las necesidades únicas de las personas LGBTQ+ en México y paises hispanohablantes. Este está disponible en [www.saludmental.lgbt](https://saludmental.lgbt).
+- **Directorio de salud mental:** Se trata de una base de datos gratuita que engloba a diversas personas profesionistas de la salud mental que poseen conocimientos y sensibilidad hacia las necesidades únicas de las personas LGBTQ+ en México y países hispanohablantes. Este está disponible en [www.saludmental.lgbt](https://saludmental.lgbt).
 
-- **Metodología:** Nuestra publicación: "Metodología para la creación de Espacios Seguros para Juventudes LGBTQ+" busca ser un documento de referencia pública para que cualquier persona, colectivo u organización pueda utilizarlo como herramienta para fortalecer sus propios esfuerzos en favor de las personas LGBTQ+. Encuentrala [aquí](/metodologia).
+- **Metodología:** Nuestra publicación: "Metodología para la creación de Espacios Seguros para Juventudes LGBTQ+" busca ser un documento de referencia pública para que cualquier persona, colectivo u organización pueda utilizarlo como herramienta para fortalecer sus propios esfuerzos en favor de las personas LGBTQ+. Encuéntrala [aquí](/metodologia).
 
 # Ubicación
 

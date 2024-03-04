@@ -10,13 +10,13 @@ Para asuntos en general, la mejor manera de ponerte en contacto con Incluyo es e
 
 # Organizaciones y escuelas
 
-Para asuntos relacionados al trabajo relacionado con empresas, organizaciones y escuelas, ponerse en contacto al correo vinculacion@incluyo.lgbt. En este correo, cuéntanos sobre tu empresa, organización o escuela, y qué tipo de colaboración buscas. Posteriormente, el equipo se pondrá en contacto contigo para gestionar una llamada y crear una propuesta acorde a las necesidades identificadas.
+Para asuntos relacionados al trabajo con empresas, organizaciones y escuelas, ponerse en contacto al correo vinculacion@incluyo.lgbt. En este correo, cuéntanos sobre tu empresa, organización o escuela, y qué tipo de colaboración buscas. Posteriormente, el equipo se pondrá en contacto contigo para gestionar una llamada y crear una propuesta acorde a las necesidades identificadas.
 
 # Directorio de salud mental
 
 Para asuntos relacionados al directorio de salud mental, contamos con dos correos:
 
-- Si eres una organización o persona profesionista de la salud mental con perspectiva de diversidad sexogenérica, tienes experiencia trabajando con personas LGBTQ+ y te gustaría agregar tu perfil a este directorio, ponte en contacto con nosotres para obtener más información al correo perfiles-dsmi@incluyo.lgbt.
+- Si eres una organización o persona profesionista de la salud mental con perspectiva de diversidad sexogenérica, tienes experiencia trabajando con personas LGBTQ+ y te gustaría agregar tu perfil al directorio, ponte en contacto con nosotres para obtener más información al correo perfiles-dsmi@incluyo.lgbt.
 
 - Si experimentaste un mal trato o deseas reportar alguno de los perfiles que aparecen en este directorio, por favor, escríbenos al correo reportes-dsmi@incluyo.lgbt.
 
