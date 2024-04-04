@@ -1,24 +1,22 @@
-<section class="content">
-  <div class="container" id='main'>
+<div class="container" id='main-content'>
 
-    <div id='loader' class='py-5' style='text-align: center;'>
-      <h1>Cargando...</h1>
-    </div>
-
-
-    <script>
-      window.onload = function () {
-        const queryParams = window.location.search;
-        const iframeURL = 'https://registro.incluyo.lgbt/rsvp' + queryParams;
-        const iframe = document.createElement('iframe');
-        iframe.setAttribute('src', iframeURL);
-        iframe.setAttribute('width', '100%');
-        iframe.setAttribute('height', '1000px');
-        iframe.setAttribute('scrolling', 'no')
-        document.getElementById('main').replaceChildren(iframe);
-      }
-
-    </script>
-
+  <div id='loader' class='py-1' style='text-align: center;'>
+    <h1>Cargando...</h1>
   </div>
-</section>
+
+
+  <script>
+    window.onload = function () {
+      const queryParams = window.location.search;
+      const iframeURL = 'https://registro.incluyo.lgbt/' + queryParams;
+      const iframe = document.createElement('iframe');
+      iframe.setAttribute('src', iframeURL);
+      iframe.setAttribute('width', '100%');
+      iframe.setAttribute('height', '1000px');
+      iframe.setAttribute('scrolling', 'no')
+      document.getElementById('main-content').replaceChildren(iframe);
+    }
+
+  </script>
+
+</div>
