@@ -22,7 +22,7 @@
 {{ $eventsEndpoint := printf "%s%s%s"
 $.Site.Params.contentfulContentURL
 "content_type=event&access_token="
-$.Site.Params.contentfulAPIKey
+$.Site.Params.Contentfulapikey
 }}
 
 <section class="calendar">
@@ -40,16 +40,34 @@ $.Site.Params.contentfulAPIKey
 
     <div class="row justify-content-center gy-4">
 
-      {{ $events := getJSON $eventsEndpoint }}
+      {{ $events := dict }}
+      {{ with try (resources.GetRemote $eventsEndpoint) }}
+        {{ with .Err }}
+          {{ errorf "%s" . }}
+        {{ else with .Value }}
+          {{ $events = . | transform.Unmarshal }}
+        {{ else }}
+          {{ errorf "Unable to get remote resource %q" $eventsEndpoint }}
+        {{ end }}
+      {{ end }}
 
       {{ range $events.items }}
 
       {{ $imgEndpoint := printf "%s%s%s%s"
       $.Site.Params.contentfulAssetsURL .fields.image.sys.id
-      "?access_token=" $.Site.Params.contentfulAPIKey
+      "?access_token=" $.Site.Params.Contentfulapikey
       }}
 
-      {{ $imgJSON := getJSON $imgEndpoint }}
+      {{ $imgJSON := dict }}
+      {{ with try (resources.GetRemote $imgEndpoint) }}
+        {{ with .Err }}
+          {{ errorf "%s" . }}
+        {{ else with .Value }}
+          {{ $imgJSON = . | transform.Unmarshal }}
+        {{ else }}
+          {{ errorf "Unable to get remote resource %q" $eventsEndpoint }}
+        {{ end }}
+      {{ end }}
 
       {{ $imgURL := printf "%s%s" "https:" $imgJSON.fields.file.url }}
 

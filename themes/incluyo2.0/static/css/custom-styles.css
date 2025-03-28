@@ -40,36 +40,36 @@ footer {
 
 .bg-rainbow {
   background: linear-gradient(
-        90deg,
-        rgba(255, 0, 0, 1) 0%,
-        rgba(255, 154, 0, 1) 10%,
-        rgba(208, 222, 33, 1) 20%,
-        rgba(79, 220, 74, 1) 30%,
-        rgba(63, 218, 216, 1) 40%,
-        rgba(47, 201, 226, 1) 50%,
-        #1c7fee 60%,
-        rgba(95, 21, 242, 1) 70%,
-        rgba(186, 12, 248, 1) 80%,
-        rgba(251, 7, 217, 1) 90%,
-        rgba(255, 0, 0, 1) 100%
-    ) !important;
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    #1c7fee 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  ) !important;
   color: #fff;
   height: 10px;
   position: absolute;
   bottom: -10px;
   left: -1px;
   width: 102%;
-  box-shadow: 0 2px 4px rgba(0,0,0,.45);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
 }
 
 .not-found-message {
-  text-align: center; 
+  text-align: center;
   margin-top: 10rem;
 }
 
 .hero {
   background-color: #8d54ff;
-  background-image: url('/img/hero.webp');
+  background-image: url("https://tkmrpojsltxhllgkqhpa.supabase.co/storage/v1/object/public/resources/incluyo-website/hero.webp");
   background-position: center;
   background-size: cover;
   height: 22rem;
@@ -144,7 +144,7 @@ footer {
 
   .sidebar li {
     font-size: 18px !important;
-    margin-bottom: 15px;  
+    margin-bottom: 15px;
   }
 
   .scrollable {
@@ -158,7 +158,9 @@ footer {
   }
 }
 
-.scrollable h1,h2,h3 {
+.scrollable h1,
+h2,
+h3 {
   scroll-margin-top: calc(60px + 1em);
   margin-bottom: 1rem;
 }
@@ -171,7 +173,8 @@ footer {
   font-weight: 600;
 }
 
-.scrollable p, ul {
+.scrollable p,
+ul {
   font-size: 20px;
 }
 
@@ -262,7 +265,7 @@ PRELOADER
   -webkit-border-radius: 100px;
   -o-border-radius: 100px;
   -ms-border-radius: 100px;
-  border-right: 3px solid #1453F2 !important;
+  border-right: 3px solid #1453f2 !important;
   border-top: 3px solid rgba(19, 19, 19, 0.1) !important;
   height: 50px;
   left: 50%;
